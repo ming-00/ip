@@ -27,8 +27,8 @@ public class TaskList {
         String s = "Here are the items in your list:\n";
         System.out.println("Here are the items in your list:");
         int i = 1;
+        lst.forEach(item -> System.out.println(lst.indexOf(item)+ ". " + item.toString() + "\n"));
         for (Task item : lst) {
-            System.out.println(i + ". " + item.toString());
             s += i + ". " + item.toString() + "\n";
             i++;
         }
